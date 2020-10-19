@@ -1,0 +1,331 @@
+/*VISUAL_CODE*/
+    /*MAIN_SECTION*/
+    html {
+        background-color:black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+        font-size: 2rem;
+    }
+    
+    .design {
+        background-color: burlywood;
+        margin:1%;
+        padding:1%;
+        border:1px groove darkgray;
+        transition: all 1s ease;
+    }
+
+    .design:hover{
+        color: bisque;
+        background-color:rgb(223, 184, 134,0.6)
+    }
+
+    footer{
+        padding:5%;
+        font-size: 50%;
+        text-align: end;
+    }
+    h1{
+        text-transform: uppercase;
+    }
+    h3{
+        text-transform: capitalize;
+        text-align:center;
+    }
+    img{
+        width:70%;
+        height:30%;
+    }
+    p{
+        font-size:35%;
+    }
+    /*END_OF_MAIN_SECTION*/
+
+    /*LAYOUT*/
+    .container{
+        display: grid;   
+        grid-template-areas: 
+                            "header"
+                            "main"
+                            "sidebar"
+                            "footer";
+    }
+        /*GRID_AREAS*/
+        header{
+            grid-area:header;
+            text-transform: uppercase;
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+            transition: all 1s ease;
+        }
+        .main{
+            grid-area:main;
+        }
+        .sidebar{
+            grid-area:sidebar;
+        }
+        footer{
+            grid-area:footer;
+        }
+    /*END_LAYOUT*/
+    
+
+    /*MENU_SECTION*/
+    nav {
+        display:flex;
+        flex-direction: column;
+    }
+    
+    nav ul { /*NAVEGADOR EN COLUMNA, OCULTO*/
+        justify-content: space-evenly;
+        flex-direction: column;
+        display:none;
+    }
+
+    nav ul.show {
+        display:flex;
+    }
+
+    nav ul li{
+        margin: 1% 5% 1% 5%;  
+        border:2px outset darkgray;
+        list-style: none;
+        width:80%;
+        text-align:center;
+        transition: all 1s ease;
+    }
+    nav ul li a{
+        text-decoration:none;
+        color:goldenrod;
+        align-items:center;
+        
+    }   
+
+    nav ul li:hover{
+        background-color: goldenrod;
+    }
+    
+    .menu_display{
+        font-size:50%;
+        transition: all 1s ease;
+    }
+
+    .menu_display:hover{
+        background-color: goldenrod;
+    }
+
+    .head_of_page{
+        display:flex;
+        flex-direction: row;
+        font-size: 60%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo {
+        width:10%;
+        height:10%;
+    }
+    /*END_MENU_SECTION*/
+
+  
+
+/*INDEX_STYLES_SPECIFICATIONS*/
+.news_of_the_month{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 5% 95%;
+    grid-template-areas: "new_head new_head"
+                         "new new";
+}
+.news_head{
+    grid-area:new_head;
+    font-size: 50%;
+    text-align: center;
+}
+.head_of_page ul li{
+    font-size:70%;
+}
+
+.articles_various{
+    grid-area:new, new;
+    border:1px inset gray;
+    padding:1%;
+}
+
+.outstanding{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.outstanding section{
+    width:50%;
+    height:100%;
+    border:1px inset gray;
+    padding:1%; 
+}
+/*END_INDEX_STYLES_SPECIFICATIONS*/
+
+/*COMMUNITY_AND_PRODUCTS_IN_COMMON*/
+.submain{
+    grid-area:submain;
+    justify-content: center;
+}
+
+/*END_COMMUNITY_AND_PRODUCTS_IN_COMMON*/
+
+/*COMMUNITY_STYLES_SPECIFICATIONS*/
+.container_community{
+    display: grid;   
+    grid-template-areas: 
+                        "header"
+                        "main"
+                        "submain"
+                        "footer";
+}
+
+.table_font{
+    font-size: 50%;
+}
+
+form{
+    text-align: center;
+    
+}
+td{
+    border:1px inset gray;
+}
+th{
+    background-color: gray;
+}
+
+.list{
+    background-color: rgb(222, 184, 135,0.3);
+    margin-top: 10%;
+    align-items: initial;
+    text-transform: capitalize;
+    
+}
+.list li{
+    margin-right: 10%;
+}
+
+.captcha_style {
+    color:rgb(180, 7, 7,0.3);
+    font-size: 100%;
+}
+
+/*END_COMMUNITY_STYLES_SPECIFICATIONS*/
+
+
+
+/*PRODUCTS_STYLES_SPECIFICATIONS*/
+.container_products{  
+    display: grid;   
+    grid-template-areas: 
+                        "header"
+                        "submain"
+                        "main"
+                        "footer";
+}
+
+.main_products .products_header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.main_products section {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.main_products div, .main_products section{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.main_products div{
+    font-size: 60%;
+}
+
+.main_products form section figure{
+    width:25%;
+    height:25%;
+}
+
+
+
+.products_store{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;  
+    font-size: 80%;
+    margin-bottom: 10%;
+    border-right: 1%;
+}
+.products_store img{
+    height:80%;
+}
+
+
+
+/*END_PRODUCTS_STYLES_SPECIFICATIONS*/
+
+
+
+  /*RESPONSIVE_SECTION*/
+  @media only screen and (min-width: 660px){
+    /*MAIN_RESPONSIVE*/
+    .container {
+        display: grid;   
+        grid-template-columns: 75% 25%;
+        grid-template-areas: 
+                            "header header"
+                            "main sidebar"
+                            "footer footer";
+    }
+    /*MENU_VISIBLE*/
+    nav ul{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .menu_display{
+        display:none;
+    }
+
+    /*INDEX_RESPONSIVE*/
+    .outstanding{
+        flex-direction: column;
+    }
+    .outstanding section{
+        width:97%;
+        height:50%;
+    }
+    .head_of_page ul li{
+        font-size: 100%;
+    }
+
+    /*COMMUNITY_and_PRODUCTS_RESPONSIVE*/
+    .container_community, .container_products{
+        display: grid;   
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+                            "header header"
+                            "main submain"
+                            "footer footer";
+    }
+
+    .products_store{
+        font-size: 120%;
+    }
+  }
+
+/*END_OF_RESPONSIVE_SECTION*/
+/*END_OF_VISUAL_CODE*/
