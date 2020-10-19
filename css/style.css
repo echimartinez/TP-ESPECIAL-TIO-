@@ -7,7 +7,7 @@
     }
     
     .design {
-        background-color: burlywood;
+        background-color: black;
         margin:1%;
         padding:1%;
         border:1px groove darkgray;
@@ -21,7 +21,7 @@
 
     footer{
         padding:5%;
-        font-size: 50%;
+        font-size: 70%;
         text-align: end;
     }
     h1{
