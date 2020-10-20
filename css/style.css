@@ -1,13 +1,13 @@
 /*VISUAL_CODE*/
     /*MAIN_SECTION*/
     html {
-        background-color:black;
+        background-color:blue;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
         font-size: 2rem;
     }
     
     .design {
-        background-color: black;
+        background-color: blue;
         margin:1%;
         padding:1%;
         border:1px groove darkgray;
