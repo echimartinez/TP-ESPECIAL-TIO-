@@ -1,13 +1,13 @@
 /*VISUAL_CODE*/
     /*MAIN_SECTION*/
     html {
-        background-color:black;
+        background-color:blue;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
         font-size: 2rem;
     }
     
     .design {
-        background-color: burlywood;
+        background-color: blue;
         margin:1%;
         padding:1%;
         border:1px groove darkgray;
@@ -21,7 +21,7 @@
 
     footer{
         padding:5%;
-        font-size: 50%;
+        font-size: 70%;
         text-align: end;
     }
     h1{
@@ -106,7 +106,7 @@
     }
     
     .menu_display{
-        font-size:50%;
+        font-size:70%;
         transition: all 1s ease;
     }
 
